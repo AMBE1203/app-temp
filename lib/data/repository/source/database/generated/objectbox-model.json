@@ -1,0 +1,107 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:620348028449957147",
+      "lastPropertyId": "5:5394809170380138556",
+      "name": "LocalImageUrlData",
+      "properties": [
+        {
+          "id": "1:7755302489534658102",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:697702466220110496",
+          "name": "origin",
+          "type": 9
+        },
+        {
+          "id": "3:7784701896440174451",
+          "name": "sm",
+          "type": 9
+        },
+        {
+          "id": "4:7005248372867730252",
+          "name": "md",
+          "type": 9
+        },
+        {
+          "id": "5:5394809170380138556",
+          "name": "lg",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:5736625946808882092",
+      "lastPropertyId": "7:948189803410655943",
+      "name": "LocalUserData",
+      "properties": [
+        {
+          "id": "1:3646679575918855187",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8604817153985242902",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "3:5367864051532365559",
+          "name": "money",
+          "type": 9
+        },
+        {
+          "id": "4:7653050059550994268",
+          "name": "gender",
+          "type": 6
+        },
+        {
+          "id": "5:3639603828326409765",
+          "name": "birthday",
+          "type": 6
+        },
+        {
+          "id": "6:6611914713452302523",
+          "name": "avatarId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "1:7785460691198293941",
+          "relationTarget": "LocalImageUrlData"
+        },
+        {
+          "id": "7:948189803410655943",
+          "name": "uid",
+          "type": 9,
+          "flags": 2048,
+          "indexId": "2:2874501620715196240"
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:5605754679405962755",
+          "name": "photos",
+          "targetId": "1:620348028449957147"
+        }
+      ]
+    }
+  ],
+  "lastEntityId": "2:5736625946808882092",
+  "lastIndexId": "2:2874501620715196240",
+  "lastRelationId": "1:5605754679405962755",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

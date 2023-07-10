@@ -1,0 +1,19 @@
+targets:
+  $default:
+    sources:
+      - lib/**
+      - lib/data/graphql/**
+    builders:
+      artemis:
+        options:
+          generate_helpers: true
+
+          schema_mapping:
+            - schema: lib/data/graphql/schema.graphql
+              queries_glob: lib/data/graphql/pokedex.graphql
+              output: lib/data/repository/model/generated/pokedex_graphql.dart
+
+          scalar_mapping:
+            - graphql_type: DateTime
+              dart_type: DateTime
+              use_custom_parser: true

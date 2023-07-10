@@ -1,0 +1,13 @@
+signingConfigs {
+    release {
+        storeFile file("release-keystore.jks")
+        storePassword "mykeystore2023"
+        keyAlias "upload"
+        keyPassword "mykeystore2023"
+    }
+}
+
+// $ keytool -v -list -keystore
+// Certificate fingerprints:
+        // SHA1: 59:05:98:9C:F4:CE:86:A5:06:F2:4F:4C:29:DF:CE:82:95:25:80:B0
+        // SHA256: A3:4E:73:B4:9C:F2:D7:0F:E7:FC:AC:B1:30:4F:BD:CD:DE:0F:E9:F3:6D:24:84:9B:3F:56:4D:6C:48:1C:DF:9D
